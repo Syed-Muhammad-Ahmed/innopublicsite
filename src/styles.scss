@@ -1,0 +1,57 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+  //   overflow-x: hidden;
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  /* CSS styles for slick carousel dots */
+  .slick-dots {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-left: 0px;
+  }
+
+  .slick-dots li {
+    margin: 0 5px;
+    /* Adjust the spacing between dots as per your preference */
+    list-style-type: none;
+  }
+
+  .slick-dots li button {
+    width: 10px;
+    /* Adjust the size of the dots as per your preference */
+    height: 10px;
+    border-radius: 50%;
+    background-color: #bcbcbc;
+    /* Default color of the dots */
+    opacity: 0.5;
+    /* Default opacity of the dots */
+    border: none;
+    cursor: pointer;
+    list-style-type: none;
+    content-visibility: hidden;
+  }
+
+  .slick-dots li.slick-active button {
+    background-color: #5e5e5e;
+    /* Color of the active dot */
+    opacity: 1;
+    /* Opacity of the active dot */
+  }
+  @media only screen and (max-width: 600px) {
+    .slick-next {
+      margin-right: 0px !important;
+    }
+    .slick-prev {
+      margin-left: 0px !important;
+    }
+  }
+}
